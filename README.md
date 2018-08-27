@@ -6,8 +6,8 @@ You have two ways
  1) You can copy the AdDomains.txt files contents to C:\windows\system32\drivers\etc\hosts file manually
  2) press windows key and in the search box copy: 
  
-powershell -Command "Start-Process powershell -Verb runAs \"IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/etsubu/BlockAdDomains/master/BlockAds.ps1') ; blockAds; echo Done. ; pause""
+powershell -Command "Start-Process powershell -Verb runAs \\"IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/etsubu/BlockAdDomains/master/BlockAds.ps1') ; blockAds; echo Done. ; pause""
 
 and press enter. UAC will pop up and request admin access which is required to edit hosts file on your system. If you later on wish to rollback the changes you made to the hosts file you can use:
 
-powershell -Command "Start-Process powershell -Verb runAs \"IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/etsubu/BlockAdDomains/master/BlockAds.ps1') ; rollBackAds; echo Done. ; pause""
+powershell -Command "Start-Process powershell -Verb runAs \\"IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/etsubu/BlockAdDomains/master/BlockAds.ps1') ; rollBackAds; echo Done. ; pause""
