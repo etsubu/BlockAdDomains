@@ -1,3 +1,4 @@
+
 # Following hosts include spotify ads
 127.0.0.1 media-match.com
 127.0.0.1 adclick.g.doublecklick.net
